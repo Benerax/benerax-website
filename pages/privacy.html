@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — BENERAX</title>
+<meta name="description" content="BENERAX privacy policy: what data the BENERAX Shopify App accesses, how it is used, retained, and deleted." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/"><img src="/assets/logo.png" alt="BENERAX" /></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="/pages/shopify-app.html">Shopify App</a>
+      <a href="/pages/core.html">Core</a>
+      <a href="/pages/platform.html">Platform</a>
+      <a href="/pages/software-development.html">Software Dev</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/pages/about.html">About</a>
+    </nav>
+    <div class="nav-cta"><a class="btn btn-primary" href="/pages/shopify-app.html">Get the Shopify App</a></div>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main class="wrap legal">
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 2026 · BENERAX LLC, Georgia, USA</p>
+
+  <p>This Privacy Policy explains what data the BENERAX Shopify App ("the App", "we", "us") accesses, how we use it, how long we keep it, and how it is deleted. It applies to merchants who install the App on their Shopify store.</p>
+
+  <h2>1. What the App can access</h2>
+  <p>The App requests the minimum access it needs to do its job. With the merchant's authorization, it uses Shopify's <strong>product access (write_products)</strong> to create and update <strong>draft</strong> products in the merchant's own store.</p>
+  <p>The App <strong>does not request or read your orders or your customers' personal data.</strong> It is built around product discovery and preparation, not order or customer management.</p>
+
+  <h2>2. What we store</h2>
+  <p>To operate the App, we store:</p>
+  <ul>
+    <li><strong>Store identity &amp; connection:</strong> your Shopify store domain and the access token needed to draft products on your behalf (stored encrypted at rest).</li>
+    <li><strong>App activity:</strong> the trend, preparation, and draft records you create through the App, and technical event logs (e.g. webhook and processing logs) used to run and debug the service.</li>
+    <li><strong>Subscription state:</strong> your plan and billing status, synced from Shopify.</li>
+  </ul>
+  <p>We do not sell your data, and we do not use it for advertising.</p>
+
+  <h2>3. How we use it</h2>
+  <p>We use the data solely to provide the App's functionality: discovering products, preparing them with AI, drafting them into your store, tracking your drafts, and managing your subscription and support.</p>
+
+  <h2>4. Data retention</h2>
+  <p>Technical activity logs are retained for a limited period (approximately 30 days) and then removed automatically. Store identity, connection, and subscription records are kept while your store has the App installed.</p>
+
+  <h2>5. Deletion &amp; your rights</h2>
+  <p>When you uninstall the App, we close your store's local state and stop using your access token. In line with Shopify's data-protection requirements, we honor the standard compliance webhooks:</p>
+  <ul>
+    <li><strong>shop/redact</strong> — when Shopify signals it (typically ~48 hours after uninstall), we delete your store's associated records from our database.</li>
+    <li><strong>customers/redact</strong> and <strong>customers/data_request</strong> — supported for completeness; with our product-only access, we hold no customer personal data to return or erase.</li>
+  </ul>
+  <p>You may also request deletion of your data at any time by emailing us.</p>
+
+  <h2>6. Third parties</h2>
+  <p>The App relies on Shopify (the platform you install it on) and our hosting and AI-processing providers strictly to deliver the service. These providers process data only as needed to operate the App.</p>
+
+  <h2>7. Security</h2>
+  <p>Access tokens are encrypted at rest, and merchant requests are authenticated. We follow the principle of least access — the App only requests the product scope it needs.</p>
+
+  <h2>8. Changes</h2>
+  <p>We may update this policy as the App evolves. Material changes will be reflected here with an updated date.</p>
+
+  <h2>9. Contact</h2>
+  <p>Questions or data requests: <a href="mailto:support@benerax.com">support@benerax.com</a> (support) or <a href="mailto:info@benerax.com">info@benerax.com</a> (general).</p>
+  <p>BENERAX LLC · Georgia, USA</p>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand"><img src="/assets/logo.png" alt="BENERAX" /><p style="max-width:32ch">AI-driven software company building tools for modern commerce.</p></div>
+      <div><h4>Product</h4><ul><li><a href="/pages/shopify-app.html">Shopify App</a></li><li><a href="/pages/core.html">Core</a></li><li><a href="/pages/platform.html">Platform</a></li><li><a href="/#pricing">Pricing</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="/pages/about.html">About</a></li><li><a href="/pages/software-development.html">Software Development</a></li><li><a href="mailto:info@benerax.com">info@benerax.com</a></li><li><a href="mailto:support@benerax.com">support@benerax.com</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="/pages/privacy.html">Privacy Policy</a></li><li><a href="/pages/terms.html">Terms of Service</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year>2026</span> BENERAX LLC · Georgia, USA</span><span>Built with AI, shipped with care.</span></div>
+  </div>
+</footer>
+<script src="/assets/site.js"></script>
+</body>
+</html>
