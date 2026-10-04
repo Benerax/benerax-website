@@ -34,8 +34,8 @@
   <p>This Privacy Policy explains what data the BENERAX Shopify App ("the App", "we", "us") accesses, how we use it, how long we keep it, and how it is deleted. It applies to merchants who install the App on their Shopify store.</p>
 
   <h2>1. What the App can access</h2>
-  <p>The App requests the minimum access it needs to do its job. With the merchant's authorization, it uses Shopify's <strong>product access (write_products)</strong> to create and update <strong>draft</strong> products in the merchant's own store.</p>
-  <p>The App <strong>does not request or read your orders or your customers' personal data.</strong> It is built around product discovery and preparation, not order or customer management.</p>
+  <p>The App requests the minimum access it needs to do its job. With the merchant's authorization, it uses Shopify's <strong>product access (write_products)</strong> to create and update <strong>draft</strong> products in the merchant's own store. It also reads <strong>limited order and line-item details</strong> — order and item identifiers, quantities, prices, and timestamps — to record sales outcomes.</p>
+  <p>At this stage, the App <strong>does not collect your customers' personal data</strong>, such as names, email addresses, phone numbers, or shipping/billing addresses.</p>
 
   <h2>2. What we store</h2>
   <p>To operate the App, we store:</p>
@@ -56,7 +56,7 @@
   <p>When you uninstall the App, we close your store's local state and stop using your access token. In line with Shopify's data-protection requirements, we honor the standard compliance webhooks:</p>
   <ul>
     <li><strong>shop/redact</strong> — when Shopify signals it (typically ~48 hours after uninstall), we delete your store's associated records from our database.</li>
-    <li><strong>customers/redact</strong> and <strong>customers/data_request</strong> — supported for completeness; with our product-only access, we hold no customer personal data to return or erase.</li>
+    <li><strong>customers/redact</strong> and <strong>customers/data_request</strong> — supported for completeness; we hold no customer personal data to return or erase, as we only read limited, non-personal order and line-item details.</li>
   </ul>
   <p>You may also request deletion of your data at any time by emailing us.</p>
 
